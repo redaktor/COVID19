@@ -1,7 +1,7 @@
 
 <img src="https://raw.githubusercontent.com/redaktor/style/master/assets/readme/logo.png" width="36" height="auto" align="right">
 
-### COVID-19
+# COVID-19
 *preview*<br>
 <img src="https://redaktor.me/_deliver/ushahidi.png" width="200" height="auto"><br>
 [![-](https://raw.githubusercontent.com/redaktor/style/master/assets/readme/lineBlue.png)](#)<br>
