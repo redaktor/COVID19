@@ -3,7 +3,7 @@
 
 ### COVID-19
 *preview*<br>
-[![-](https://redaktor.me/_deliver/ushahidi.png)](#)<br>
+<img src="https://redaktor.me/_deliver/ushahidi.png" width="200" height="auto"><br>
 [![-](https://raw.githubusercontent.com/redaktor/style/master/assets/readme/lineBlue.png)](#)<br>
 <br>
 Sources for:<br>
