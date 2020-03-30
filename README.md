@@ -14,13 +14,13 @@ https://redaktor.ushahidi.io
 
 ## Story
 
-[TODO - write a story :]<br>
 Crisis Response to Coronavirus COVID-19 : <br>
 Help, Solidarity, Information on a map and in a timeline
 
 
 ## How do I contribute?
-
+:rainbow_flag: for i18n [fr, es, ? etc. ...] :: 
+# Please translate [these files](https://github.com/redaktor/COVID19/tree/master/site/src/nls) or create new languages there.
 Fork, edit, pull ...<br>
 Raise issues ...
 
