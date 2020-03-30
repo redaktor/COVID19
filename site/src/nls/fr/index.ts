@@ -1,103 +1,103 @@
 export default {
   counter: `{count, plural,
-	=1 {item left}
-	other {items left}}`,
-  about: 'about',
-  dashboards: 'dashboards',
+	<=1 {élément restant}
+	other {éléments restant}}`,
+  about: 'à propos',
+  dashboards: 'tableaux de bord',
   docs: 'docs',
-  community: 'community',
+  community: 'communauté',
   versions: 'versions',
-  languages: 'languages',
-  toolOverview: 'Overview',
-  blogpost: 'Blog post',
-  codeOfConduct: 'Code of Conduct',
-  heroTitle: `Crisis Response to COVID-19 :
-Help, Solidarity, Information.`,
-  heroContent1: `**Young people help high-risk groups through the COVID-19-time.**
-An exceptional situation calls for exceptional measures.`,
-  heroContent2: `The new type of corona virus has turned our society upside down.
-**Now it is mobilizing our community.**`,
+  languages: 'langages',
+  toolOverview: "Vue d'ensemble",
+  blogpost: 'Article',
+  codeOfConduct: 'Code de Conduite',
+  heroTitle: `Réponse de crise au COVID-19 :
+aide, solidarité, information.`,
+  heroContent1: `**Des jeunes gens aident des groupes à haut-risque à travers le temps-COVID-19.**
+À situation exceptionnelle, mesures exceptionnelles.`,
+  heroContent2: `Ce nouveau type de coronavirus a mis notre société sens dessus dessous.
+**À présent il mobilise notre communauté.**`,
 
-  heroButtonText: 'Open the app',
-  helpTeaser: 'Finding help',
-  helpTitle: 'I need help',
-  helpText: `### Map and List
-  [Look for your place on the map](https://redaktor.ushahidi.io/savedsearches/12/map).
-  If you couldn't find any assistance in the map or [list](https://redaktor.ushahidi.io/savedsearches/12/data) :
-  ## I need help
-  **[Register](https://redaktor.ushahidi.io/register)** to be contacted without revealing your data.
+  heroButtonText: "Ouvrir l'appli",
+  helpTeaser: "Trouver de l'aide",
+  helpTitle: "J'ai besoin d'aide",
+  helpText: `### Carte et liste
+  [Trouver votre lieu sur la carte](https://redaktor.ushahidi.io/savedsearches/12/map).
+  Si vous n'avez trouvé aucune assistance sur la carte ou la [liste](https://redaktor.ushahidi.io/savedsearches/12/data) :
+  ## J'ai besoin d'aide
+  **[S'enregistrer](https://redaktor.ushahidi.io/register)** pour être contacté·e sans révéler vos données.
 
-  **[Tell people what you need.](https://redaktor.ushahidi.io/posts/create/2)**
+  **[Partager ce dont vous avez besoin.](https://redaktor.ushahidi.io/posts/create/2)**
 
-  Scroll down for country-specific information.`,
-  offerTeaser: 'Help',
-  offerTitle: 'I can offer',
-  offerText: `*Use this option if you do NOT belong to a risk group.*
-  [Read the guide by the WHO](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public)
+  Descendre pour les informations spécifiques par pays.`,
+  offerTeaser: 'Aide',
+  offerTitle: 'Je peux offrir',
+  offerText: `*Utiliser cette option si vous n'appartenez PAS à un groupe à risque.*
+  [Lire le guide de l'OMS](https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public)
   [See the flyer of BZgA](https://www.infektionsschutz.de/fileadmin/infektionsschutz.de/Downloads/200326_BZgA_Atemwegsinfektion-Hygiene_schuetzt_A4_EN_RZ_Ansicht.pdf)
 
-  [Look for a place to help on the map](https://redaktor.ushahidi.io/savedsearches/13/map)
-  and search unsolved support.
+  [Voir un endroit où aider sur la carte](https://redaktor.ushahidi.io/savedsearches/13/map)
+  et chercher des demandes de soutien non-résolues.
 
-  ### I can offer help:
-  **[Tell people what you can give.](https://redaktor.ushahidi.io/posts/create/3)**
+  ### Je peux offrir de l'aide :
+  **[Partager ce que vous pouvez offrir.](https://redaktor.ushahidi.io/posts/create/3)**
 
-  **[Enter solidary neighbourhoods and local initiatives.](https://redaktor.ushahidi.io/posts/create/6)**
+  **[Saisir des quartiers solidaires et initiatives locales.](https://redaktor.ushahidi.io/posts/create/6)**
   `,
-  infoTeaser: 'Inform',
+  infoTeaser: 'Informer',
   infoTitle: 'Info',
-  infoText: `Research [**informations and experts**](https://redaktor.ushahidi.io/savedsearches/35/data) in the list.
-  Find [restrictions](https://redaktor.ushahidi.io/savedsearches/22/map) and [incidents](https://redaktor.ushahidi.io/savedsearches/14/map) on the map.
+  infoText: `Chercher [**de l'information et des experts**](https://redaktor.ushahidi.io/savedsearches/35/data) dans la liste.
+  Découvrir des [restrictions](https://redaktor.ushahidi.io/savedsearches/22/map) et [incidents](https://redaktor.ushahidi.io/savedsearches/14/map) sur la carte.
   `,
-  /* <p>questions? <span class="nospace_m">suggestion redaktor.me</span></p> */
+  /* <p>questions? <span class="ospace_m">suggestion redaktor.me</span></p> */
   countryDefault: 'US',
-  countryTitle: 'Country specific infos',
-  country1: 'USA United States',
-  country1Text: `**Official WHO Links** [are here](https://redaktor.ushahidi.io/posts/1313)
-**Official US Links** [are here](https://redaktor.ushahidi.io/posts/5059)
+  countryTitle: 'Informations spécifiques par pays',
+  country1: 'États-Unis',
+  country1Text: `**Les liens officiels de l'OMS** [sont ici](https://redaktor.ushahidi.io/posts/1313)
+**Les liens officiels des USA** [sont ici](https://redaktor.ushahidi.io/posts/5059)
 
-For a network overview visit the site [COVID-19 Mutual Aid](https://itsgoingdown.org/c19-mutual-aid/).
-We are desperately looking for more neighbourhood networks in South- and Northamerica.`,
-  country2: 'UK United Kingdom',
-  country2Text: `**Official WHO Links** [are here](https://redaktor.ushahidi.io/posts/1313)
-**Official UK Links** [are here](https://redaktor.ushahidi.io/posts/5066)
+Pour une vue d'ensemble du réseau voir le site [COVID-19 Mutual Aid](https://itsgoingdown.org/c19-mutual-aid/).
+Nous recherchons davantage de réseaux de voisinage dans les Amériques.`,
+  country2: 'UK Royaume Uni',
+country2Text: `**Les liens officiels de l'OMS** [sont ici](https://redaktor.ushahidi.io/posts/1313)
+**Les [liens officiels pour le Royaume-Uni](https://redaktor.ushahidi.io/posts/5066)** sont ici
 
-For a network overview visit the site [COVID-19 Mutual Aid](https://covidmutualaid.org)
+Pour une vue d'ensemble du réseau voir le site [COVID-19 Mutual Aid](https://covidmutualaid.org)
 `,
-  country3: 'Spain',
-  country3Text: `[See also](https://redaktor.ushahidi.io/posts/1317)
-**Official WHO Links** [are here](https://redaktor.ushahidi.io/posts/1313)
+  country3: 'Espagne',
+  country3Text: `[Voir aussi](https://redaktor.ushahidi.io/posts/1317)
+Les [**liens officiels de l'OMS**](https://redaktor.ushahidi.io/posts/1313) sont ici
 
-Visit [the neighbourhood App of Frena la curva Maps](https://es.mapa.frenalacurva.net/views/map).
+Visiter [les cartes du voisinage de Frena la curva](https://es.mapa.frenalacurva.net/views/map).
 
 [Apps](https://frenalacurva.net)`,
-  country4: 'Italy',
-  country4Text: `[See also](https://redaktor.ushahidi.io/posts/1315)
+  country4: 'Italie',
+  country4Text: `[Voir aussi](https://redaktor.ushahidi.io/posts/1315)
 
-Visit [the neighbourhood App of ANPAS](https://anpas.ushahidi.io/views/map)
-or call **+39 055303821** or inform at [Ministero della Salute](http://www.salute.gov.it/nuovocoronavirus).
-The public utility phone number **1500** of the Ministry of Health is also active.
+Visiter [la carte de voisinage de l'ANPAS](https://anpas.ushahidi.io/views/map)
+ou appeler le **+39 055 303 821** ou s'informer au [Ministère de la Santé](http://www.salute.gov.it/nuovocoronavirus).
+Le numéro d'utilité public **1500** du Ministère de la Santé est également actif.
 `,
-  country5: 'India',
-  country5Text: `**Official WHO Links** [are here](https://redaktor.ushahidi.io/posts/1313).
-  **Official India Info** [are here](https://www.mohfw.gov.in) --- [cache](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=2ahUKEwjB3vKkg8LoAhX-QEEAHfMxCV4Qi-8BKAEwAXoECGYQAg&url=https%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3AQ7S18eyhhpgJ%3Ahttps%3A%2F%2Fwww.mohfw.gov.in%2F&usg=AOvVaw1Sb1EVUgbJejU4Y5_2-uY0)
-  [Situation Reports](https://www.who.int/india/emergencies/india-situation-report)`,
-  moreCountries: `Find more countries by changing the language or [here](https://redaktor.ushahidi.io/savedsearches/36/data).`,
+  country5: 'Inde',
+  country5Text: `Les [**liens officiels de l'OMSs**](https://redaktor.ushahidi.io/posts/1313) sont ici.
+  Les [**liens officiels d'information pour l'Inde**](https://www.mohfw.gov.in) sont ici --- [cache](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=2ahUKEwjB3vKkg8LoAhX-QEEAHfMxCV4Qi-8BKAEwAXoECGYQAg&url=https%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3AQ7S18eyhhpgJ%3Ahttps%3A%2F%2Fwww.mohfw.gov.in%2F&usg=AOvVaw1Sb1EVUgbJejU4Y5_2-uY0)
+  [Rapports de situation](https://www.who.int/india/emergencies/india-situation-report)`,
+  moreCountries: `Trouver d'autres pays en modifiant le langage ou [par ici](https://redaktor.ushahidi.io/savedsearches/36/data).`,
   infoTextMain1: `### COVID-19
-COVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Dec. 2019.
-The most common symptoms of COVID-19 are fever, tiredness, and dry cough.
-[Q&A](https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/q-a-coronaviruses)
+Le COVID-19 est une maladie infectieuse causée par le coronavirus le plus récemment découvert. Ce nouveau virus et la maladie étaient inconnus avant que l'épidémie ne commence en décembre 2019.
+Les symptomes les plus communs du COVID-19 sont la fièvre, la fatigue et une toux sèche.
+[FAQ](https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/q-a-coronaviruses)
 `,
-  infoTextMain2: `### Spreading
-People can catch COVID-19 from others who have the virus. The disease can spread from person to person through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or exhales.
+  infoTextMain2: `### Contagion
+On peut attraper le COVID-19 d'autres personnes infectées. La maladie se propage d'une personne à l'autre par de fines goutelettes en provenance du nez ou de la bouche de la personne infectée lorsqu'elle tousse, postillonne ou exhale.
 
-This is why it is important to wash hands and stay more than 1 meter (3 feet) away from people.`,
+C'est pourquoi il est important de se laver les mains et conserver des distances de plus d'un mètre avec autrui.`,
   infoTextMain3: `### Contributions
-Let us tinker **a map of solidarity and creativity** together
+Bricolons **une carte de la solidarité et de la créativité** ensemble
 
-We are now looking for
-- Suggestions
-- Moderators
-- Translators
+Nous recherchons actuellement
+- des suggestions
+- des modérat·eur·rice·s
+- des traduct·eur·rice·s
 `
 };
