@@ -1,0 +1,43 @@
+{
+	"build-app": {
+		"locale": "en",
+		"supportedLocales": ["de","es","fr"],
+		"cldrPaths": [
+			"cldr-data/supplemental/plurals.json",
+			"cldr-data/supplemental/likelySubtags"
+		],
+		"pwa": {
+			"manifest": {
+				"name": "dojo.io",
+				"short_name": "dojo.io",
+				"description": "dojo.io",
+				"background_color": "#ffffff",
+				"theme_color": "#222127",
+				"icons": [
+					{
+						"src": "src/assets/logo.png",
+						"sizes": [
+							16,
+							192,
+							512
+						]
+					}
+				]
+			},
+			"serviceWorker": {
+				"clientsClaim": true,
+				"routes": [
+					{
+						"urlPattern": ".*",
+						"strategy": "networkFirst",
+						"expiration": {
+							"maxEntries": 25
+						}
+					}
+				]
+			}
+		}
+	},
+	"create-app": {}
+}
+

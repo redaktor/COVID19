@@ -1,0 +1,43 @@
+.root {
+	width: 100%;
+}
+
+.main {
+	display: flex;
+}
+
+.content {
+	margin-right: calc(var(--grid-size) * 33);
+	margin-left: calc(var(--grid-size) * 2);
+	margin-bottom: calc(var(--grid-size) * 2);
+	min-width: calc(var(--grid-size) * 30);
+	max-width: calc(var(--grid-size) * 90);
+}
+
+@media (max-width: 768px) {
+	.main {
+		margin-top: 0;
+		display: block;
+	}
+
+	.content {
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+	.main {
+		margin-top: var(--menu-height);
+	}
+}
+
+@media (min-width: 1025px) {
+	.root {
+		display: flex;
+	}
+
+	.main {
+		margin-top: 0;
+		margin-left: calc(var(--grid-size) * 25);
+	}
+}

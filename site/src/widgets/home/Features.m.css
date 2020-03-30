@@ -1,0 +1,129 @@
+@import '../variables.css';
+
+.root {
+}
+.mapImg {
+	width: 200px;
+	height: auto;
+}
+.featureOne {
+	--link-color: var(--color-amber);
+	--link-color-hover: #000;
+	background: linear-gradient(110deg, var(--color-red), var(--color-yellow));
+}
+
+.featureTwo {
+	--link-color: var(--color-green);
+	background: linear-gradient(110deg, var(--color-yellow), var(--color-green));
+}
+
+.featureThree {
+	--link-color: var(--color-blue);
+	background: linear-gradient(110deg, var(--color-purple), var(--color-blue));
+	margin-bottom: calc(var(--grid-size) * -2);
+}
+
+.featureBottom {
+	display: flex;
+	flex-direction: column !important;
+	padding-top: var(--grid-size);
+	align-items: center;
+	color: #fff;
+	background: var(--dark-background-color);
+}
+.btnPlus {
+	position: relative;
+	top: var(--grid-size);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 54px;
+	height: 54px;
+	border-radius: 100%;
+	box-shadow: 0 0 6px rgba(0,0,0,.12),0 6px 6px rgba(0,0,0,.24);
+	background-color: #ffc334;
+}
+.btnPlus::before,
+.btnPlus::after {
+	position: absolute;
+	content: '';
+	height: 4px;
+	width: 18px;
+	background-color: #2b323a;
+}
+.btnPlus::after {
+	transform: rotate(90deg);
+}
+.featureRow {
+	flex-direction: row;
+	display: flex;
+}
+.featureRow ul {
+	font-size: var(--feature-points-font-size);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.featureCardRight {
+	width: 45%;
+	margin: calc(var(--grid-size) * 10) calc(var(--grid-size) * 20) calc(var(--grid-size) * 10) 0px;
+	padding: calc(var(--grid-size) * 3.5);
+}
+
+.featureCardLeft {
+	width: 45%;
+	margin: calc(var(--grid-size) * 10) 0 calc(var(--grid-size) * 10) calc(var(--grid-size) * 20);
+	padding: calc(var(--grid-size) * 3.5);
+}
+
+.featureContent {
+	display: flex;
+	padding: 0;
+}
+
+.topFeaturePoint {
+	margin-top: 0;
+}
+
+.featureTitle {
+	color: white;
+	width: 45%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin: calc(var(--grid-size) * 2.5);
+}
+
+@media (max-width: 960px) {
+	.featureRow {
+		flex-direction: column;
+	}
+	.featureTitle {
+		margin: calc(var(--grid-size) * 5) auto calc(var(--grid-size) * 2.5) auto;
+		width: 80%;
+	}
+	.featureTwo {
+		flex-direction: column-reverse;
+	}
+	.featureCardLeft {
+		height: 100%;
+		width: inherit;
+		margin: calc(var(--grid-size) * 2.5);
+		margin-bottom: calc(var(--grid-size) * 5);
+		max-width: initial;
+		padding: 0;
+	}
+	.featureCardRight {
+		width: inherit;
+		margin: calc(var(--grid-size) * 2.5);
+		height: 100%;
+		margin-bottom: calc(var(--grid-size) * 5);
+		max-width: initial;
+		padding: 0;
+	}
+}

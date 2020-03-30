@@ -1,0 +1,35 @@
+@import '../variables.css';
+
+.root {
+	width: 100%;
+	height: calc(100vh - var(--header-size));
+	margin-bottom: calc(var(--grid-size) * -2);
+	display: flex;
+	flex-direction: column;
+}
+
+.iframe {
+	border: none;
+	flex-grow: 1;
+	height: calc(100vh - var(--header-size) - var(--menu-height));
+	width: 100%;
+}
+
+.iconLink {
+	position: relative;
+	z-index: 4;
+	display: flex;
+	margin-left: calc(var(--grid-size) * 1.5);
+	width: 28px;
+	height: 28px;
+}
+
+.icon {
+	fill: var(--dark-background-color);
+}
+
+@media (min-width: 1025px) {
+	.icon {
+		fill: var(--color-white);
+	}
+}
