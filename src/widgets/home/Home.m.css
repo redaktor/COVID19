@@ -1,0 +1,6 @@
+@import '../variables.css';
+
+.root {
+	background: rgb(30, 35, 42);
+	flex: 1;
+}

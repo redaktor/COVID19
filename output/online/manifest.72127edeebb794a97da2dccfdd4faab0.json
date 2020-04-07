@@ -1,0 +1,27 @@
+{
+  "icons": [
+    {
+      "src": "icon_512x512.5059a0ff70f24c9290ffb49d2b55473b.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_192x192.d8b33b5dfe0db2036270b399f0ec9bea.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_16x16.2039cebbf2f0f0b77e8cfa23eb07371c.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ],
+  "name": "dojo.io",
+  "short_name": "dojo.io",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "dojo.io",
+  "background_color": "#ffffff",
+  "theme_color": "#222127"
+}

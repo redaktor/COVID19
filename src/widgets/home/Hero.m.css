@@ -1,0 +1,313 @@
+@import '../variables.css';
+.root,
+.frameContainer {
+	--color-background: rgba(23, 25, 28, 0.4);
+	--color-background-faded: rgba(23, 25, 28, 0.64);
+	--color-highlight: var(--color-amber);
+	--sd1: rgba(0, 0, 0, 0.2);
+  --sd2: rgba(0, 0, 0, 0.14);
+  --sd3: rgba(0, 0, 0, 0.12);
+}
+.root {
+	margin: 0;
+	background: var(--hero-background);
+	width: 100%;
+	height: calc(var(--grid-size) * 46);
+	color: var(--color-white);
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+.svg {
+	margin-bottom: 8px;
+}
+.svg:not(.active) {
+	cursor: pointer;
+}
+.svg path, .svg circle {
+	fill: var(--font-color-inverse,#aaa);
+}
+.svg:hover path {
+	fill: var(--color-white);
+}
+.svg.active path,
+.svg.active circle {
+	fill: var(--color-amber);
+}
+
+.headline {
+	color: var(--color-white);
+	width: calc(var(--grid-size) * 60);
+	text-align: center;
+	margin-bottom: 0;
+	/*margin-bottom: calc(var(--grid-size) * 2);*/
+}
+
+.buttonContainer,
+.textContainer {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-evenly;
+
+}
+.buttonContainer {
+	position: relative;
+	align-items: flex-start;
+	justify-content: center;
+	flex-grow: 1;
+}
+.textContainer {
+	align-items: flex-end;
+	padding: calc(var(--grid-size) * 2) 0 calc(var(--grid-size) * 1) 0;
+	background:	linear-gradient(180deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, .95) 100%);
+}
+.text {
+	padding: 0 var(--grid-size) 0 var(--grid-size);
+}
+.text p {
+	hyphens: auto;
+}
+.build,
+.select,
+.selectDropdown {
+	--lg: linear-gradient(110deg, var(--color-from), var(--color-to));
+}
+.build,
+.select {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0);
+	color: var(--color-white);
+	border: 3px solid;
+	border-image: var(--lg);
+	border-image-slice: 1;
+	margin-bottom: var(--grid-size);
+	box-sizing: border-box;
+	user-select: none;
+}
+.build {
+	--color-from: rgba(220,0,5,0.24);
+	--color-to: rgba(195,12,112,0.24);
+	font-size: 0.875em;
+	text-transform: uppercase;
+	width: auto;
+	height: calc(var(--grid-size) * 4);
+	padding-left: 4px;
+	padding-right: 4px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.build:first-child {
+	margin-left: 6px;
+}
+.build:hover {
+	--color-from: var(--color-red);
+	--color-to: var(--color-purple);
+	cursor: pointer;
+	text-decoration: none;
+}
+.select {
+	flex-direction: column;
+	justify-content: flex-start;
+	width: calc(var(--grid-size) * 24);
+	height: calc(var(--grid-size) * 8);
+}
+.select:first-child {
+	--color-from: var(--color-red);
+	--color-to: var(--color-amber);
+	margin-right: calc(var(--grid-size) * 3 + 3px);
+}
+.select:not(.select:first-child) {
+	--color-from: var(--color-amber);
+	--color-to: var(--color-light-green);
+}
+.select,
+.select > label + div {
+	height: auto;
+	width: 300px !important;
+}
+.select > label {
+	background: rgba(23, 25, 28, 0.3);
+	border-bottom: 1px dotted var(--color-white);
+	margin-bottom: -2px;
+	padding-left: 8px;
+	font-weight: bold;
+	line-height: 2;
+	width: 100%;
+}
+
+.selectDropdown {
+	padding: 3px;
+	background: var(--lg);
+}
+.selectDropdown:focus {
+	border: none;
+	background: var(--lg);
+}
+.select button {
+	margin-left: 3px;
+	width: calc(100% - 6px);
+	font-weight: bold;
+	border: none;
+	color: var(--color-amber);
+}
+.root a {
+	text-decoration: none;
+}
+.root a h3 {
+	border-bottom: 1px solid var(--color-orange);
+}
+
+
+.btnDown {
+	position: absolute;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	box-shadow: 0 0 6px rgba(0,0,0,.12),0 6px 6px rgba(0,0,0,.24);
+	background-color: #ffc334;
+}
+.btnDown::after {
+	position: absolute;
+	content: '';
+	border: solid black;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 4px;
+	transform: rotate(45deg);
+}
+.btnDown1 {
+	top: 96px;
+}
+.btnDown2 {
+	bottom: 10px;
+	right: 28px;
+}
+.frameContainer {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.frameContainer .build:first-child {
+	margin-right: 32px;
+}
+.frameLinks {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	max-width: 1020px;
+	margin: 8px 0 0 16px;
+}
+.frameLinks .select {
+	display: none;
+}
+.frame {
+	flex-grow: 1;
+	width: 100%;
+	height: 100%;
+	max-width: 1020px;
+	min-height: calc(100vh - 100px);
+	margin: 0 0 10px 16px;
+}
+.frame.mobile {
+	width: calc(100% - 48px);
+}
+.extLink,
+.extLink:visited {
+	color: var(--font-color-inverse,#aaa);
+	display: inline-flex;
+	float: right;
+}
+.extLink:hover {
+	color: var(--color-white);
+}
+
+.root div[role]>div[aria-selected="false"] {
+	line-height: 12px !important;
+}
+/*
+@media (max-width: 940px) {
+	.build {
+		transform: scale(0.8);
+	}
+}
+*/
+
+@media (max-width: 960px) {
+	.frameLinks {
+		flex-wrap: wrap;
+	}
+	.build {
+		width: calc(var(--grid-size) * 24);
+	}
+	.headline {
+		font-size: 1.25em;
+		width: calc(var(--grid-size) * 36);
+	}
+	.btnDown2 {
+		bottom: -16px;
+		left: 50%;
+	}
+}
+@media (max-width: 768px) {
+	.frameLinks>* {
+		transform: scale(.8);
+		flex-shrink: 1;
+		margin: -2px;
+	}
+	.build { width: auto; }
+}
+@media (min-width: 768px) {
+	.root { margin-top: 56px; }
+}
+
+@media (min-width: 1348px) {
+	.build {
+		width: 100%;
+	}
+	.build:first-child,
+	.build {
+		flex-grow: 1;
+		height: calc(var(--grid-size) * 4);
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.buttonContainer .select {
+		display: none;
+	}
+	.btnDown1 {
+		top: 0;
+	}
+	.frameContainer {
+		align-items: flex-start;
+		flex-direction: row-reverse;
+	}
+	.frameContainer .build:first-child {
+		margin-right: 0;
+	}
+	.frameLinks {
+		width: 100%;
+		display: block;
+		margin: 8px auto 0 auto;
+		max-width: calc(var(--grid-size) * 30);
+	}
+	.frameLinks .select {
+		display: flex;
+		margin-bottom: calc(var(--grid-size) * 2);
+	}
+}
+@media (min-width: 1348px) and (min-height: 720px) {
+	.build { height: calc(var(--grid-size) * 5) }
+}
+@media (min-width: 1348px) and (min-height: 800px)  {
+	.build { height: calc(var(--grid-size) * 6) }
+}
